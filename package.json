@@ -1,13 +1,29 @@
 {
   "name": "gulp-template",
   "version": "0.0.1",
+  "private": "true",
   "devDependencies": {
-    "gulp-browserify": "~0.4.4",
     "gulp-watch": "~0.5.0",
     "gulp-util": "~2.2.14",
     "gulp": "~3.5.2",
-    "gulp-uglify": "~0.2.1"
+    "gulp-uglify": "~0.2.1",
+    "gulp-streamify": "0.0.5",
+    "vinyl-source-stream": "^0.1.1",
+    "browserify": "^3.38.1",
+    "browserify-shim": "^3.4.1",
+    "gulp-mocha": "^0.4.1",
+    "gulp-espower": "^0.4.0",
+    "gulp-clean": "^0.2.4",
+    "sinon": "~1.9.1",
+    "power-assert": "^0.4.1"
   },
-  "dependencies": {
+  "dependencies": {},
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "pixi": "global:PIXI"
   }
 }

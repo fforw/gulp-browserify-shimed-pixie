@@ -1,1 +1,3 @@
-// main module code here
+var pixi = require("pixi");
+
+console.log(pixi);
